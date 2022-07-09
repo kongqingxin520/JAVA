@@ -1,0 +1,23 @@
+package kongqingxin;
+
+import java.util.Arrays;
+
+
+
+public class test1{
+	public static void main(String[] args) {
+		int[] arr1 = {3,6,23,14,54};
+		for (int i = 1; i < arr1.length; i++) {
+			for (int j = 0; j < arr1.length-i; j++) {
+				if (arr1[j]>arr1[j+1]) {
+					int temp = arr1[j];
+					arr1[j]=arr1[j+1];
+					arr1[j+1]=temp;
+				}
+			}
+		}
+		System.out.println("排序后的数组是："+Arrays.toString(arr1));
+	}
+
+
+}
